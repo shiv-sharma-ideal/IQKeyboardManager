@@ -65,7 +65,7 @@ import UIKit
 
             var textAttributes = [NSAttributedString.Key: Any]()
             textAttributes[.foregroundColor] = tintColor
-
+            textAttributes[.font] = UIFont.systemFont(ofSize: 16)
             if let attributes = titleTextAttributes(for: .normal) {
                 for (key, value) in attributes {
                     textAttributes[key] = value
